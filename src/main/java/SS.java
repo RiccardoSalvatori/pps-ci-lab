@@ -1,4 +1,4 @@
-public class SSClass {
+public class SS {
 
     public static void main(String[] args) {
         System.out.println("ciao");
