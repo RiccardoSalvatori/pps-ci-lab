@@ -1,4 +1,11 @@
 language: java
+
+#Normally Travis automatically searches for build.gradle or build.gradle.kts files
+#If found and gradlew is present runs
+#     ./gradlew assemble
+#     ./gradlew check
+#Otherwise runs the same commands with the version of Gradle pre-installed on the instance
+#Anyway we configure the command manually to avoid surprises (recommended)
 script:
   - './gradlew clean build'
 
